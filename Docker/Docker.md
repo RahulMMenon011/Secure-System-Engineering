@@ -63,13 +63,13 @@ In this command -i refers to an interactive, -t refers to the tag that needs to 
 
 Create a file named Dockerfile in the current directory with the following contents.
 
-FROM ubuntu:bionic
-
+```
 FROM ubuntu:bionic
 
 RUN apt-get update && apt-get install -y python3.6 --no-install-recommends
 
 CMD ["/usr/bin/python3.6", "-i"]
+```
 
 Build an image using the instructions written in the Dockerfile.
 
