@@ -38,39 +38,57 @@ Navigate to ‘View’ and click ‘analysis view’
 The Data Flow sequence will be
 
 Employee -> Web Application (Submit credentials)
+
 o	Data Flow Type: HTTP
+
 o	Description: Employee submits login credentials to the web application.
 
 Web Application -> Authorization Server (Verify credentials)
+
 o	Data Flow Type: HTTPS
+
 o	Description: The web application sends the credentials to the authorization server for verification.
 
 Authorization Server -> Web Application (Send account details)
+
 o	Data Flow Type: HTTPS
+
 o	Description: The authorization server sends the account details back to the web application.
 
 Web Application -> Employee (Display account details)
+
 o	Data Flow Type: HTTP
+
 o	Description: The web application displays the account details to the customer.
 
 Employee -> Web Application (Request Applying Leave)
+
 o	Data Flow Type: HTTPS
+
 o	Description: The employee requests a applying leave through the web application.
 
 Web Server -> Authorization Server (Update Leave Account)
+
 o	Data Flow Type: HTTPS
+
 o	Description: The web server sends the leave request to the authorization server to update the leaves.
 
 Web Server -> SQL Database Server(Initiate request for Update)
+
 o	Data Flow Type: HTTPS
+
 o	Description: The web server initiates the request with the database server
 
 SQL Database Server -> Web Server (Confirm Update)
+
 o	Data Flow Type: HTTPS
+
 o	Description: The SQL Database Server confirms the update and sends the confirmation back to the web server.
 
 Web Server -> Employee (Display HRMS System)
+
 o	Data Flow Type: HTTPS
+
 o	Description: The web server displays the leave status to the employee in HRMS System
 
 ![image](https://github.com/RahulMMenon011/Secure-System-Engineering/assets/140642506/a71cf413-d191-4111-82b1-e9cdfa983b59)
